@@ -22,8 +22,8 @@ public class PersonRepositoryTests {
     public void givenPersonObject_whenSave_thenSaveEmployee(){
 
         Person person = new Person();
-        person.setName("Sinebi Innazo");
-        person.setEmail("sinebi.innazo@yahoo.com");
+        person.setName("Joseph Nma");
+        person.setEmail("joseph.nma@yahoo.com");
         person.setRole("CUSTOMER");
         person.setPassword("1234567");
 
@@ -37,14 +37,14 @@ public class PersonRepositoryTests {
     public void givenEmployeeList_whenFindAll_thenEmployeeList(){
 
         Person person = new Person();
-        person.setName("Sinebi Innazo");
-        person.setEmail("sinebi.innazo@yahoo.com");
+        person.setName("Joseph Nma");
+        person.setEmail("joseph.nma@yahoo.com");
         person.setRole("CUSTOMER");
         person.setPassword("1234567");
 
         Person person1 = new Person();
-        person1.setName("Tapiya Innazo");
-        person1.setEmail("tapiya.innazo@yahoo.com");
+        person1.setName("Emmanuel Nma");
+        person1.setEmail("emmanuel.nma@yahoo.com");
         person1.setRole("CUSTOMER");
         person1.setPassword("1234567");
         personRepository.save(person);
@@ -60,8 +60,8 @@ public class PersonRepositoryTests {
     public void givenPersonObject_whenFindById_thenPerson(){
 
         Person person = new Person();
-        person.setName("Sinebi Innazo");
-        person.setEmail("sinebi.innazo@yahoo.com");
+        person.setName("Joseph Nma");
+        person.setEmail("joseph.nma@yahoo.com");
         person.setRole("CUSTOMER");
         person.setPassword("1234567");
         Person newPerson = personRepository.save(person);
@@ -72,8 +72,8 @@ public class PersonRepositoryTests {
     public void shouldUpdateAPersonInformation(){
 
         Person person = new Person();
-        person.setName("Sinebi Innazo");
-        person.setEmail("sinebi.innazo@yahoo.com");
+        person.setName("Joseph Nma");
+        person.setEmail("joseph.nma@yahoo.com");
         person.setRole("CUSTOMER");
         person.setPassword("1234567");
 
@@ -94,8 +94,8 @@ public class PersonRepositoryTests {
     public void givenPersonObject_whenFindByEmailAndPassword(){
 
         Person person = new Person();
-        person.setName("Sinebi Innazo");
-        person.setEmail("sinebi.innazo@yahoo.com");
+        person.setName("Joseph Nma");
+        person.setEmail("joseph.nma@yahoo.com");
         person.setRole("CUSTOMER");
         person.setPassword("1234567");
         Person newPerson = personRepository.save(person);
