@@ -85,7 +85,5 @@
 		</plugins>
 
 		<finalName>docker-test-java</finalName>
-
 	</build>
-
 </project>
