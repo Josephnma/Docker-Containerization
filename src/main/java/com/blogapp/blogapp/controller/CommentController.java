@@ -10,7 +10,7 @@ import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @RestController
-@RequestMapping("/blog/post")
+//@RequestMapping("/blog/post")
 public class CommentController {
     @Autowired
     private CommentService commentService;
