@@ -29,7 +29,7 @@ jobs:
       with:
               image: josgolf/docker-test-java
               tags: v1, latest
-              registry: registry-url.io
+              registry: docker.io
               dockerfile: Dockerfile
               username: ${{ secrets.DOCKER_USERNAME }}
               password: ${{ secrets.DOCKER_PASSWORD }}
