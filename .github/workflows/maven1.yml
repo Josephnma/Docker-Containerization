@@ -28,9 +28,11 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
         image: josgolf/docker-test-java
-#        tags: v1/latest
+        tags: ${{ secrets.DOCKER_USERNAME }}/simplewhale:latest
         registry: docker.io
         dockerfile: Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
+      - name: Image digest
+        run: echo ${{ steps.docker_build.outputs.digest }}
 
